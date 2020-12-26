@@ -1,5 +1,5 @@
 {
-    "cmd" : [ "g++.exe", "-Wall","-Wno-unused-variable", "-Wextra", "-pedantic", "-O2", "-Wshadow", "-Wformat=2", "-Wfloat-equal", "-Wconversion", "-Wlogical-op", "-Wshift-overflow=2", "-Wduplicated-cond", "-Wcast-qual", "-Wcast-align", "-D_GLIBCXX_DEBUG", "-D_GLIBCXX_DEBUG_PEDANTIC", "-D_FORTIFY_SOURCE=2", "-fno-sanitize-recover", "-fstack-protector", "-std=c++17", "${file_name}", "-o",
+    "cmd" : [ "g++.exe", "-std=c++17", "-Wall", "-Wno-unused-variable", "-Wextra", "-pedantic", "-O2", "-Wshadow", "-Wformat=2", "-Wfloat-equal", "-Wconversion", "-Wlogical-op", "-Wshift-overflow=2", "-Wduplicated-cond", "-Wcast-qual", "-Wcast-align", "-D_GLIBCXX_DEBUG", "-D_GLIBCXX_DEBUG_PEDANTIC", "-D_FORTIFY_SOURCE=2", "-fno-sanitize-recover", "-fstack-protector", "${file_name}", "-o",
               "${file_base_name}.exe", "&&", "start", "cmd",
               "/k", "${file_base_name}.exe" ],
     "file_regex" : "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
